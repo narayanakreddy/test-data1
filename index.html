@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <script src="angular.min.js"></script>
+        <script src="app.js"></script>
+</head>
+
+<body ng-app="ngApp">
+        <div ng-controller="sampleCtrl">
+                <h1>{{name}}</h1>
+
+                <div ng-repeat="item in list | unique:'name'">
+                        <div>{{item.name}}</div>
+                </div>
+        </div>
+</body>
+
+</html>
